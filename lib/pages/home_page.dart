@@ -197,13 +197,9 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                       // hangman images
                       Expanded(
-                        flex: 3,
+                        flex: 2,
                         child: Center(
-                          child: Text(
-                            'Times guessed: $guesses',
-                            style: const TextStyle(
-                                color: Colors.white, fontSize: 18.0),
-                          ),
+                          child: Image.asset('lib/assets/HM-0${6 - guesses}.png', color: Colors.white54),
                         ),
                       ),
                       // guess word display
